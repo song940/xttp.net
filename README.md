@@ -5,7 +5,7 @@ simple http client for .net
 
 ## example
 
-```
+```csharp
 using System;
 
 namespace Xttp.Example
