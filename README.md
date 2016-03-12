@@ -6,21 +6,13 @@ simple http client for .net
 ## example
 
 ```csharp
-using System;
-
-namespace Xttp.Example
+public static void Main()
 {
-    class Example
-    {
-        public static void Main()
-        {
-            var client = new Xttp();
-            var request = new Request("http://api.lsong.org/ip/all");
-            Response response = client.Send(request).Result;
-            Console.WriteLine(response.ToString()); // response text
-            Console.ReadLine();
-        }
-    }
+    var client = new Xttp();
+    var request = new Request("http://api.lsong.org/ip/all");
+    Response response = client.Send(request).Result;
+    Console.WriteLine(response.ToString()); // response text
+    Console.ReadLine();
 }
 
 ```
